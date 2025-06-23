@@ -9,8 +9,8 @@ while True:
     if operation=="*":
         print(num1*num2)
     if operation=="/":
-    print(num1/num2)
+        print(num1/num2)
     Continue=input("do you want to stop the  program (yes or no)")
     if Continue=="yes":
         break
-        
+
