@@ -13,7 +13,16 @@ def printBoard(board):
 def placement(length,direction,xcoords, boards, ycoords):
     if direction=="right":
         for i in range(length):
-            
+            board[ycoords][xcoords+i] = "[=]"
+    if direction=="left":
+        for i in range(length):
+            board[ycoords][xcoords-i] = "[=]"
+    if direction=="up":
+        for i in range(length):
+            board[ycoords-i][xcoords] = "[=]"
+    if direction=="down":
+        for i in range(length):
+            board[ycoords+i][xcoords] = "[=]"
 board=[]
 makeboard(board)
 printBoard(board)
